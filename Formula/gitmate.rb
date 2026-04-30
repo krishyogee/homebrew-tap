@@ -30,6 +30,27 @@ class Gitmate < Formula
     bin.install "gitmate"
   end
 
+  def caveats
+    <<~EOS
+      gitmate needs an AI provider API key.
+
+      Quickest start — interactive setup:
+        gitmate init
+
+      Or export a key directly in your shell rc:
+        export ANTHROPIC_API_KEY=sk-ant-...   # primary
+        export OPENAI_API_KEY=sk-...          # or
+        export GROQ_API_KEY=gsk_...           # or
+
+      Try it:
+        cd <some-git-repo>
+        git add .
+        gitmate ship --no-pr
+
+      Docs: https://github.com/krishyogee/gitmate
+    EOS
+  end
+
   test do
     assert_match "gitmate", shell_output("#{bin}/gitmate version")
   end
