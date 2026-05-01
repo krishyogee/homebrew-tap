@@ -1,28 +1,28 @@
 class Gitmate < Formula
   desc "Multi-agent AI CLI for Git workflows with approval gates"
   homepage "https://github.com/krishyogee/gitmate"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.1/gitmate_0.1.1_darwin_arm64.tar.gz"
-      sha256 "c138bbc999cd15f6f90187f99e27d794ff841959fb7dcd17f1125a66f5dd4d48"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.2/gitmate_0.1.2_darwin_arm64.tar.gz"
+      sha256 "9290b7f980f59a8f7f4ec0151b7bc38196ec823cfcbd84a97e012d0defc4b56d"
     end
     on_intel do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.1/gitmate_0.1.1_darwin_amd64.tar.gz"
-      sha256 "71a19aa5966cbb47f926e3ead9992460408af5e12161bffdd4e710f9b2a25877"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.2/gitmate_0.1.2_darwin_amd64.tar.gz"
+      sha256 "f008d05871b34c24ec558fadcb81e8299a53dc7bb05d1d9f21287546a7b30490"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.1/gitmate_0.1.1_linux_arm64.tar.gz"
-      sha256 "deafb0ce2fd3d0a0a9e25f185dd0b3a040340c4f3814d373d3792d8b17200b6d"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.2/gitmate_0.1.2_linux_arm64.tar.gz"
+      sha256 "9f86b75769a345bbe037f7b3132c07703be9ba786727bd4cf3c8013dbc8e9c8e"
     end
     on_intel do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.1/gitmate_0.1.1_linux_amd64.tar.gz"
-      sha256 "7de13c2782851f4de0eda7a85b202aad02ac1a1ffa8fc6d50b0b260618c3d85d"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.1.2/gitmate_0.1.2_linux_amd64.tar.gz"
+      sha256 "bcbf602f64217643671e8232018868de95a3b240614e61c64944fe5530ca8b61"
     end
   end
 
