@@ -1,28 +1,28 @@
 class Gitmate < Formula
   desc "Multi-agent AI CLI for Git workflows with approval gates"
   homepage "https://github.com/krishyogee/gitmate"
-  version "0.2.9"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.2.9/gitmate_0.2.9_darwin_arm64.tar.gz"
-      sha256 "3344ee2707a2b5ae1275f8d4bf385353c1de99645cc4f4e7ef2e94320f262b8d"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.4.0/gitmate_0.4.0_darwin_arm64.tar.gz"
+      sha256 "bb497af25297240aa772d006427be8bfb52f0d6932453013512d712f33098bf0"
     end
     on_intel do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.2.9/gitmate_0.2.9_darwin_amd64.tar.gz"
-      sha256 "9ffeec917ebd92d1b49aaf5ed96635101ce1a1f309957446dfdb368980d575bc"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.4.0/gitmate_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ff2c3d19a50550b249e4f7989253861800fa99f00d65b6106473f6d6f304b5dc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.2.9/gitmate_0.2.9_linux_arm64.tar.gz"
-      sha256 "c1ef5d8baae9a5b35b39f3ea6ce448f5aadbfd3fe6935835b618fd2c6c35c106"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.4.0/gitmate_0.4.0_linux_arm64.tar.gz"
+      sha256 "c5123df778471cb872e4718b82ef0a1633849350d7f6e072094411d336efba9b"
     end
     on_intel do
-      url "https://github.com/krishyogee/gitmate/releases/download/v0.2.9/gitmate_0.2.9_linux_amd64.tar.gz"
-      sha256 "f0ec566a63eccdceae771b0eb6b674c67fd238db1724e4818abadfc64fe844fb"
+      url "https://github.com/krishyogee/gitmate/releases/download/v0.4.0/gitmate_0.4.0_linux_amd64.tar.gz"
+      sha256 "dc5054a5d7bc946f2893d9ac8d87f2a370680d5306320c3f3ba9c23ec81eed35"
     end
   end
 
@@ -49,6 +49,10 @@ class Gitmate < Formula
         cd <some-git-repo>
         git add .
         gitmate ship --no-pr
+
+      Friendly mode (AI-rephrased plain-English summaries):
+        gitmate --friendly status
+        gitmate config set output.friendly true
 
       Docs: https://github.com/krishyogee/gitmate
     EOS
